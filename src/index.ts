@@ -6,7 +6,7 @@ const start = async () => {
     const filepaths = await fg(['xml/*.xml']);
 
     filepaths.forEach((filepath) => {
-        const xmlParser = new xml2js.Parser();
+        const xmlParser = new xml2js.Parser({ explicitArray: false });
         const updatedFilepath = 'json' + filepath.substring(3, filepath.length - 4) + '.json';
 
         fs.readFile(filepath, (err: any, data: any) => {
