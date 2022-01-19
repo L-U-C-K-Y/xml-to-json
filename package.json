@@ -1,0 +1,29 @@
+{
+  "name": "xml-to-json",
+  "version": "1.0.0",
+  "description": "parse xml to json",
+  "main": "index.ts",
+  "repository": "git@github.com:L-U-C-K-Y/xml-to-json.git",
+  "author": "Lucky",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "build": "tsc",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.10",
+    "@types/xml2js": "^0.4.9",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "fast-glob": "^3.2.11",
+    "xml2js": "^0.4.23"
+  }
+}
